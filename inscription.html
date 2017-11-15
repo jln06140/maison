@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="style/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body>
+    <div class="contenu">
+
+        <header>
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img src="images/banniere.jpg">
+                </div>
+            </div>
+            <!-- <div class="banniere row">
+                <div class="col s12 m12"><span class="blue-text text-darken-2 ">Bienvenue Dans Les Alpes Maritimes</span></div>
+        </div> -->
+        </header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="http://www.vence.fr/" class="brand-logo">
+                    <img src="images/logo2.jpg" />
+                </a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="inscription.html">Inscription</a>
+                    </li>
+                    <li>
+                        <a href="maregion.html">Ma Region</a>
+                    </li>
+                    <li>
+                        <a href="maison.html">Ma Maison</a>
+                    </li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li>
+                        <a href="inscription.html">Inscription</a>
+                    </li>
+                    <li>
+                        <a href="maregion.html">Ma Region</a>
+                    </li>
+                    <li>
+                        <a href="maison.html">Ma Maison</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <div class="container">
+            <div id="erreur" class="erreurCache">
+
+            </div>
+            <!-- <fieldset> -->
+            <form class="col s12" method="POST" id="formulaire" name="formulaire" action="">
+                <div class="row">
+                    <div class="col s2 m1 l1">
+                        <i class="material-icons col m4 offset-m8 icones">account_box</i>
+                    </div>
+
+                    <div class="input-field col S10 m5 l5">
+                        <label for="nom">Nom : </label>
+                        <input type="text" id="nom" name="nom" value="" />
+                    </div>
+
+                    <div class="col s2 m1 l1">
+                        <i class="material-icons col m4 offset-m8 icones">phone</i>
+                    </div>
+
+                    <div class="input-field col S10 m5 l5">
+                        <label for="prenom">Prenom : </label>
+                        <input type="text" id="prenom" name="prenom" value="" />
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col s2 m1 l1">
+                        <i class="material-icons col m4 offset-m8 icones">phone</i>
+                    </div>
+
+                    <div class="input-field col S10 m5 l5">
+                        <label for="email">email : </label>
+                        <input type="email" id="email" name="email" value="" />
+                    </div>
+                    <div class="col s1 m1 l1">
+                        <i class="icones material-icons col m4 offset-m8">phone</i>
+                    </div>
+
+                    <div class="input-field col S11 m5 l5">
+
+                        <label for="telephone">Telephone : </label>
+                        <input type="text" id="telephone" name="telephone" value="" />
+
+                    </div>
+                </div>
+
+
+                <div class="row">
+
+                    <div class="check col s6 m6 s12">
+                        <p>
+                            <input type="checkbox" class="filled-in" id="Parking" name="Parking" value="Parking" />
+                            <label for="Parking">Parking</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" class="filled-in" id="Animal" name="Animal" value="Animal" />
+                            <label for="Animal">Animal</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" class="filled-in" id="Fumeur" name="Fumeur" value="Fumeur" />
+                            <label for="Fumeur">Fumeur</label>
+                        </p>
+                    </div>
+
+                    <div class="decalage check col l6 m6 s12">
+
+                        <p>
+                            <input class="with-gap" name="group1" type="radio" id="test2" />
+                            <label for="test2">Loisir</label>
+                        </p>
+                        <p>
+                            <input class="with-gap" name="group1" type="radio" id="test3" />
+                            <label for="test3">Professionnel</label>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12 m4 s4">
+                        <select id="nombredepersonnes" name="nombredepersonnes">
+                            <option value="" disabled selected>Nombre de personnes</option>
+                            <option value="1">1 personne</option>
+                            <option value="2">2 personnes</option>
+                            <option value="3">3 personnes</option>
+                            <option value="2">4 personnes</option>
+                            <option value="3">5 personnes</option>
+                            <option value="2">6 personnes</option>
+                            <option value="3">Plus de 6 personnes</option>
+                        </select>
+                    </div>
+
+                    <div class="input-field col s12 m4 s4">
+                        <select id="nuitees" name="nuitees">
+                            <option value="" disabled selected>Nombre de nuitees</option>
+                            <option value="1">1 nuit</option>
+                            <option value="2">2 nuits</option>
+                            <option value="3">3 nuits</option>
+                            <option value="2">4 nuits</option>
+                            <option value="3">5 nuits</option>
+                            <option value="2">6 nuits</option>
+                            <option value="3">7 nuits</option>
+                        </select>
+                    </div>
+
+                    <div class="input-field col s12 m4 s4">
+                        <select name="departements" id="departements" onClick="document.formulaire.codepostal.value=document.formulaire.departements.value;">
+                            <option value="" disabled selected>Region</option>
+                            <option value="0"></option>
+                            <option value="01">01 - Ain</option>
+                            <option value="02">02 - Aisne</option>
+                            <option value="03">03 - Allier</option>
+                            <option value="04">04 - Alpes-de-Haute-Provence</option>
+                            <option value="05">05 - Hautes-Alpes</option>
+                            <option value="06">06 - Alpes-Maritimes</option>
+                            <option value="07">07 - Ardeche</option>
+                            <option value="08">08 - Ardennes</option>
+                            <option value="09">09 - Ariege</option>
+                            <option value="10">10 - Aube</option>
+                            <option value="11">11 - Aude</option>
+                            <option value="12">12 - Aveyron</option>
+                            <option value="13">13 - Bouches-du-Rhone</option>
+                            <option value="14">14 - Calvados</option>
+                            <option value="15">15 - Cantal</option>
+                            <option value="16">16 - Charente</option>
+                            <option value="17">17 - Charente-Maritime</option>
+                            <option value="18">18 - Cher</option>
+                            <option value="19">19 - Correze</option>
+                            <option value="2A">2A - Corse-du-Sud</option>
+                            <option value="2B">2B - Haute-Corse</option>
+                            <option value="21">21 - Cote-d'Or</option>
+                            <option value="22">22 - Cotes-d'Armor</option>
+                            <option value="23">23 - Creuse</option>
+                            <option value="24">24 - Dordogne</option>
+                            <option value="25">25 - Doubs</option>
+                            <option value="26">26 - Drome</option>
+                            <option value="27">27 - Eure</option>
+                            <option value="28">28 - Eure-et-Loir</option>
+                            <option value="29">29 - Finistere</option>
+                            <option value="30">30 - Gard</option>
+                            <option value="31">31 - Haute-Garonne</option>
+                            <option value="32">32 - Gers</option>
+                            <option value="33">33 - Gironde</option>
+                            <option value="34">34 - Herault</option>
+                            <option value="35">35 - Ille-et-Vilaine</option>
+                            <option value="36">36 - Indre</option>
+                            <option value="37">37 - Indre-et-Loire</option>
+                            <option value="38">38 - Isere</option>
+                            <option value="39">39 - Jura</option>
+                            <option value="40">40 - Landes</option>
+                            <option value="41">41 - Loir-et-Cher</option>
+                            <option value="42">42 - Loire</option>
+                            <option value="43">43 - Haute-Loire</option>
+                            <option value="44">44 - Loire-Atlantique</option>
+                            <option value="45">45 - Loiret</option>
+                            <option value="46">46 - Lot</option>
+                            <option value="47">47 - Lot-et-Garonne</option>
+                            <option value="48">48 - Lozere</option>
+                            <option value="49">49 - Maine-et-Loire</option>
+                            <option value="50">50 - Manche</option>
+                            <option value="51">51 - Marne</option>
+                            <option value="52">52 - Haute-Marne</option>
+                            <option value="53">53 - Mayenne</option>
+                            <option value="54">54 - Meurthe-et-Moselle</option>
+                            <option value="55">55 - Meuse</option>
+                            <option value="56">56 - Morbihan</option>
+                            <option value="57">57 - Moselle</option>
+                            <option value="58">58 - Nievre</option>
+                            <option value="59">59 - Nord</option>
+                            <option value="60">60 - Oise</option>
+                            <option value="61">61 - Orne</option>
+                            <option value="62">62 - Pas-de-Calais</option>
+                            <option value="63">63 - Puy-de-Dome</option>
+                            <option value="64">64 - Pyrenees-Atlantiques</option>
+                            <option value="35">65 - Hautes-Pyrenees</option>
+                            <option value="66">66 - Pyrenees-Orientales</option>
+                            <option value="67">67 - Bas-Rhin</option>
+                            <option value="68">68 - Haut-Rhin</option>
+                            <option value="69">69 - Rhone</option>
+                            <option value="70">70 - Haute-Saone</option>
+                            <option value="71">71 - Saone-et-Loire</option>
+                            <option value="72">72 - Sarthe</option>
+                            <option value="73">73 - Savoie</option>
+                            <option value="74">74 - Haute-Savoie</option>
+                            <option value="75">75 - Paris</option>
+                            <option value="76">76 - Seine-Maritime</option>
+                            <option value="77">77 - Seine-et-Marne</option>
+                            <option value="78">78 - Yvelines</option>
+                            <option value="79">79 - Deux-Sevres</option>
+                            <option value="80">80 - Somme</option>
+                            <option value="81">81 - Tarn</option>
+                            <option value="82">82 - Tarn-et-Garonne</option>
+                            <option value="83">83 - Var</option>
+                            <option value="84">84 - Vaucluse</option>
+                            <option value="85">85 - Vendee</option>
+                            <option value="86">86 - Vienne</option>
+                            <option value="87">87 - Haute-Vienne</option>
+                            <option value="88">88 - Vosges</option>
+                            <option value="89">89 - Yonne</option>
+                            <option value="90">90 - Territoire de Belfort</option>
+                            <option value="91">91 - Essonne</option>
+                            <option value="92">92 - Hauts-de-Seine</option>
+                            <option value="93">93 - Seine-Saint-Denis</option>
+                            <option value="94">94 - Val-de-Marne</option>
+                            <option value="95">95 - Val-d'Oise</option>
+                            <option value="971">971 - Guadeloupe</option>
+                            <option value="972">972 - Martinique</option>
+                            <option value="973">973 - Guyane</option>
+                            <option value="974">974 - Réunion</option>
+                            <option value="975">975 - Saint-Pierre-et-Miquelon</option>
+                            <option value="984">984 - Terres-australes-et-antarctiques-françaises</option>
+                            <option value="985">985 - Mayotte</option>
+                            <option value="986">986 - Wallis-et-Futuna</option>
+                            <option value="987">987 - Polynesie-franeaise</option>
+                            <option value="988">988 - Nouvelle-Caledonie</option>
+                        </select>
+                    </div>
+
+
+                </div>
+
+                <div id="lesbouttons" class="row">
+                    <div id="estimer" class="bouton col S16 m5 l5">
+                        <button onclick="calculPrix();return false;" class="btn waves-effect waves-light" type="submit" name="action">Estimer
+                        </button>
+                    </div>
+                    <div class="col s6 m2 l2">
+                        <input id="disabled" name="estimation" type="text" value="" />
+                    </div>
+                    <div id="reserver" class="bouton col S12 m5 l5">
+                        <button id="reserver" class="btn waves-effect waves-light" type="submit" name="action">Reserver
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+                <!-- </fieldset> -->
+
+            </form>
+        </div>
+
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Footer Content</h5>
+                        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Reseaux Sociaux</h5>
+                        <ul>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="#!">Facebook</a>
+                            </li>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="#!">Twitter</a>
+                            </li>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="#!">Snapchat</a>
+                            </li>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="#!">Google</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2014 Copyright Text
+                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/maison.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+
+
+.banniere
+{
+    background-image: url("../images/banniere.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 400px ;
+    height:300px;
+    width: 100%;
+}
+
+.parallax-container {
+    height: "300px";
+  }
+
+.banniere span
+{
+    
+  
+    text-align: center;
+    font-size: 40px;
+}
+
+.container
+{
+    width:65%;
+    margin-top: 50px;
+   
+}
+
+
+fieldset
+{
+    border: 2px #c0c0c0 solid;
+    border-radius: 20px;
+    margin-top: 30px;
+    height:800px;
+ 
+    
+    
+}
+
+.erreurCache
+{
+    display:none;
+    color:red;
+    text-align: center;
+    border:1px red solid;
+}
+
+.erreurAffiche
+{
+    display:block;
+    color:red;
+    text-align: center;
+    border:1px red solid;
+}
+
+.check
+{
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    justify-content: space-around;
+    padding-left: 50px;
+    height: 60px;
+    width:300px;
+    
+}
+
+
+
+.row .col{
+    margin-top: 40px;
+    /* border:1px black solid; */
+}
+
+.decalage
+{
+    margin-left: 120px;
+}
+
+button
+{
+    margin:auto;
+}
+
+.bouton
+{
+    text-align: center;
+}
+
+#lesbouttons
+{
+    margin-top:100px;
+}
+
+.icones
+{
+    margin-top:15px !important;
+}
+
+
