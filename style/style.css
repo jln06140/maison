@@ -26,19 +26,11 @@
     width:65%;
     margin-top: 50px;
    
+   
 }
 
 
-fieldset
-{
-    border: 2px #c0c0c0 solid;
-    border-radius: 20px;
-    margin-top: 30px;
-    height:800px;
- 
-    
-    
-}
+
 
 .erreurCache
 {
@@ -56,17 +48,7 @@ fieldset
     border:1px red solid;
 }
 
-.check
-{
-    display: flex;
-    flex-direction: row;
-    padding-top: 15px;
-    justify-content: space-around;
-    padding-left: 50px;
-    height: 60px;
-    width:300px;
-    
-}
+
 
 
 
@@ -98,6 +80,16 @@ button
 .icones
 {
     margin-top:15px !important;
+}
+
+#checkbox1
+{
+    padding-left: 50px !important;
+}
+
+.packselect
+{
+    padding-left: 50px;
 }
 
 

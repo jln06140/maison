@@ -13,11 +13,12 @@ function calculPrix() {
     var nbPersonnes = document.getElementById("nombredepersonnes").value;
     var nuitee = document.getElementById("nuitees").value;
     var message = document.getElementById("erreur").innerHTML;
+    var declencheErreur =false;
     var total =0;
     alert(nbPersonnes);
 
     if (nbPersonnes == "" || nuitee == "") {
-        afficherDivErreur();
+        declencheErreur = true;
         var erreurs="";
         if (nbPersonnes == "") {
             erreurs += '<p>Renseigner nombre de personne</p>';
@@ -28,28 +29,29 @@ function calculPrix() {
         message = erreurs;
     }
     else
-    {
-    total+= prixNuitee() + prixSelonNb() + option();
-    alert(total);
-    document.forms.formulaire.disabled.value = total+ " Euros";
+    {   
+        total+= prixNuitee() + prixSelonNb() + option();
+        document.forms.formulaire.disabled.value = total+ " Euros";
     
     }
+    afficherDivErreur(declencheErreur);
 }
 
 function prixSelonNb() {
     var nombrePersonnes = document.getElementById("nombredepersonnes");
+    alert (nombrePersonnes.value);
     var res = 0;
     if (nombrePersonnes.value > "1") {
         res = (nombrePersonnes.value-1) * 10;
     }
-    return (res);
+    return res;
 
 
 }
 
-function afficherDivErreur() {
+function afficherDivErreur(booleenErreur) {
     
-    if(document.getElementById("erreur").className == "erreurCache"){
+    if(afficherDivErreur){
         document.getElementById("erreur").className = "erreurAffiche";
     }
     else{

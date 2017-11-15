@@ -28,7 +28,7 @@
         </div> -->
         </header>
         <nav>
-            <div class="nav-wrapper">
+            <div class="nav-wrapper light-blue darken-1">
                 <a href="http://www.vence.fr/" class="brand-logo">
                     <img src="images/logo2.jpg" />
                 </a>
@@ -63,71 +63,82 @@
 
 
         <div class="container">
-            <div id="erreur" class="erreurCache">
-
-            </div>
+            <div id="erreur" class="erreurCache"></div>
             <!-- <fieldset> -->
             <form class="col s12" method="POST" id="formulaire" name="formulaire" action="">
                 <div class="row">
-                    <div class="col s2 m1 l1">
-                        <i class="material-icons col m4 offset-m8 icones">account_box</i>
+                    <div class="col s12 m6 l6">
+                        <div class="col m2 l2">
+                            <i class="material-icons col m3 offset-m6 icones">account_box</i>
+                        </div>
+
+                        <div class="input-field col m10 l10">
+                            <label for="nom">Nom : </label>
+                            <input type="text" id="nom" name="nom" value="" />
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="col m2 l2">
+                            <i class="material-icons col m6 offset-m6 icones">edit</i>
+                        </div>
+
+                        <div class="input-field col m10 l10">
+                            <label for="prenom">Prenom : </label>
+                            <input type="text" id="prenom" name="prenom" value="" />
+                        </div>
                     </div>
 
-                    <div class="input-field col S10 m5 l5">
-                        <label for="nom">Nom : </label>
-                        <input type="text" id="nom" name="nom" value="" />
-                    </div>
-
-                    <div class="col s2 m1 l1">
-                        <i class="material-icons col m4 offset-m8 icones">phone</i>
-                    </div>
-
-                    <div class="input-field col S10 m5 l5">
-                        <label for="prenom">Prenom : </label>
-                        <input type="text" id="prenom" name="prenom" value="" />
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <div class="col s2 m1 l1">
-                        <i class="material-icons col m4 offset-m8 icones">phone</i>
-                    </div>
-
-                    <div class="input-field col S10 m5 l5">
-                        <label for="email">email : </label>
-                        <input type="email" id="email" name="email" value="" />
-                    </div>
-                    <div class="col s1 m1 l1">
-                        <i class="icones material-icons col m4 offset-m8">phone</i>
-                    </div>
-
-                    <div class="input-field col S11 m5 l5">
-
-                        <label for="telephone">Telephone : </label>
-                        <input type="text" id="telephone" name="telephone" value="" />
-
-                    </div>
                 </div>
 
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <div class="col col m2 l2">
+                            <i class="material-icons col m6 offset-m6 icones">mail</i>
+                        </div>
+
+                        <div class="input-field col m10 l10">
+                            <label for="email">email : </label>
+                            <input type="email" id="email" name="email" value="" class="validate" pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" required />
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="col m2 l2">
+                            <i class="icones material-icons col m6 offset-m6">phone</i>
+                        </div>
+
+                        <div class="input-field col m10 l10">
+
+                            <label for="telephone">Telephone : </label>
+                            <input type="text" id="telephone" name="telephone" value="" />
+
+                        </div>
+                    </div>
+
+
+                </div>
+
 
                 <div class="row">
 
-                    <div class="check col s6 m6 s12">
-                        <p>
+                    <div class="valign col s12 m8 l8" id="checkbox1">
+
+                        <p class="col s4 m4 l4">
                             <input type="checkbox" class="filled-in" id="Parking" name="Parking" value="Parking" />
                             <label for="Parking">Parking</label>
                         </p>
-                        <p>
+                        <p class="col s4 m4 l4">
                             <input type="checkbox" class="filled-in" id="Animal" name="Animal" value="Animal" />
                             <label for="Animal">Animal</label>
                         </p>
-                        <p>
+                        <p class="col s4 m4 l4">
                             <input type="checkbox" class="filled-in" id="Fumeur" name="Fumeur" value="Fumeur" />
                             <label for="Fumeur">Fumeur</label>
                         </p>
+
                     </div>
 
-                    <div class="decalage check col l6 m6 s12">
+
+                    <div class="valign decalage col s12 l4 m4 ">
 
                         <p>
                             <input class="with-gap" name="group1" type="radio" id="test2" />
@@ -140,23 +151,22 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="packselect row">
                     <div class="input-field col s12 m4 s4">
                         <select id="nombredepersonnes" name="nombredepersonnes">
-                            <option value="" disabled selected>Nombre de personnes</option>
+                            <option value="" disabled selected>Personnes</option>
                             <option value="1">1 personne</option>
                             <option value="2">2 personnes</option>
                             <option value="3">3 personnes</option>
-                            <option value="2">4 personnes</option>
-                            <option value="3">5 personnes</option>
-                            <option value="2">6 personnes</option>
-                            <option value="3">Plus de 6 personnes</option>
+                            <option value="4">4 personnes</option>
+                            <option value="5">5 personnes</option>
+                            <option value="6">6 personnes</option>
                         </select>
                     </div>
 
                     <div class="input-field col s12 m4 s4">
                         <select id="nuitees" name="nuitees">
-                            <option value="" disabled selected>Nombre de nuitees</option>
+                            <option value="" disabled selected>Nuits</option>
                             <option value="1">1 nuit</option>
                             <option value="2">2 nuits</option>
                             <option value="3">3 nuits</option>
@@ -298,17 +308,6 @@
                     </div>
 
                 </div>
-
-
-
-
-
-
-
-
-
-                <!-- </fieldset> -->
-
             </form>
         </div>
 
