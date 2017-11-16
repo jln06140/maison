@@ -5,20 +5,22 @@ $(document).ready(function () {
     $('.carousel').carousel();
     $('.materialboxed').materialbox();
     $(".button-collapse").sideNav();
+    // var estimation = document.getElementById("estimation");
+    
 
 });
 
 function calculPrix() {
-    // document.getElementById("erreur").style.display = "block";
+    //document.getElementById("erreur").style.display = "block";
+    
     var nbPersonnes = document.getElementById("nombredepersonnes").value;
     var nuitee = document.getElementById("nuitees").value;
     var message = document.getElementById("erreur").innerHTML;
     var declencheErreur =false;
     var total =0;
-    alert(nbPersonnes);
-
+    
     if (nbPersonnes == "" || nuitee == "") {
-        declencheErreur = true;
+        afficherDivErreur();
         var erreurs="";
         if (nbPersonnes == "") {
             erreurs += '<p>Renseigner nombre de personne</p>';
@@ -34,12 +36,12 @@ function calculPrix() {
         document.forms.formulaire.disabled.value = total+ " Euros";
     
     }
-    afficherDivErreur(declencheErreur);
+    
 }
 
 function prixSelonNb() {
     var nombrePersonnes = document.getElementById("nombredepersonnes");
-    alert (nombrePersonnes.value);
+   
     var res = 0;
     if (nombrePersonnes.value > "1") {
         res = (nombrePersonnes.value-1) * 10;
@@ -49,9 +51,9 @@ function prixSelonNb() {
 
 }
 
-function afficherDivErreur(booleenErreur) {
+function afficherDivErreur() {
     
-    if(afficherDivErreur){
+    if( document.getElementById("erreur").className = "erreurCache"){
         document.getElementById("erreur").className = "erreurAffiche";
     }
     else{

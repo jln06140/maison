@@ -1,4 +1,6 @@
-
+.container{
+    margin-top: 50px;
+}
 
 .banniere
 {
@@ -21,15 +23,6 @@
     font-size: 40px;
 }
 
-.container
-{
-    width:65%;
-    margin-top: 50px;
-   
-   
-}
-
-
 
 
 .erreurCache
@@ -48,13 +41,25 @@
     border:1px red solid;
 }
 
+.aligner
+{
+    text-align: center;
+}
 
+#menubas li
+{
+    display : inline;
+    
+}
 
-
+#logo{
+    height:65px;
+}
+/* 
 
 .row .col{
     margin-top: 40px;
-    /* border:1px black solid; */
+     border:1px black solid; 
 }
 
 .decalage
@@ -92,4 +97,4 @@ button
     padding-left: 50px;
 }
 
-
+ */
